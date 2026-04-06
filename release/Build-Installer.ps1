@@ -55,7 +55,7 @@ dotnet publish $setupProjectPath `
     /p:IncludeNativeLibrariesForSelfExtract=true `
     -o $publishDirectory
 
-Copy-Item -LiteralPath (Join-Path $publishDirectory "AutoHwp2PdfSetup.exe") -Destination $setupExePath -Force
+Copy-Item -LiteralPath (Join-Path $publishDirectory "AutoHwp2AnythingSetup.exe") -Destination $setupExePath -Force
 
 if (Test-Path $packageZipPath) {
     Remove-Item -LiteralPath $packageZipPath -Force

@@ -250,7 +250,7 @@ internal static class InstallerOperations
     {
         using var key = Registry.CurrentUser.CreateSubKey(RegistryKeyPath);
         key?.SetValue("DisplayName", "AutoHwp2Anything");
-        key?.SetValue("DisplayVersion", "1.0.0");
+        key?.SetValue("DisplayVersion", "1.1.0");
         key?.SetValue("Publisher", "AutoHwp2Anything");
         key?.SetValue("InstallLocation", request.InstallDirectory);
         key?.SetValue("DisplayIcon", Path.Combine(request.InstallDirectory, "AutoHwp2Anything.exe"));
